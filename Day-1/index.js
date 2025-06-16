@@ -35,6 +35,8 @@ console.log(typeof t);
 
 // Number
 // boolean
+let score=null;
+console.log(score);
 // BigInt
 // syntax
 // Nonprimitive-
