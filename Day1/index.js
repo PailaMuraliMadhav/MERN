@@ -45,4 +45,14 @@ console.log(score);
 // Object
 
 
-
+let g=10;
+let num="10";
+let m=10;
+console.log(g==num);
+console.log(g!=num);
+console.log(g===num);
+console.log(g===m);
+console.log(g!==m);
+let x=13;
+console.log(x>=m);
+console.log(x<=m);
