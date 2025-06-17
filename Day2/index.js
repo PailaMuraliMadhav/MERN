@@ -85,3 +85,52 @@ switch(option){
 for(let i=1;i<=7;i++){
     console.log(i);
 }
+// While Loop
+let count =1;
+while(count <= 5){
+    console.log(count);
+    count++;
+
+}
+
+// do while loop
+// it will run at least once
+
+let i=1;
+do{
+    console.log("number: ",i);
+    i++;
+}while(i >= 5);
+
+
+// Practice:
+
+console.log("Using for loop");
+for(let i=1;i<=10;i++){
+    console.log(i);
+}
+console.log("Using do while loop:");
+let j=1;
+do{
+    console.log(j);
+    j++;
+}
+while(j<=10);
+
+// Jumping Statements:(Break and Continue);
+// BREAK: stop the loop immediately if the cond is met.
+// CONTINUE: skip the current iteration and continue with the next one.
+console.log("---------BREAK STATEMENT---------");
+for(let i=1;i<=10;i++){
+    if(i==5){
+        break;
+    }
+    console.log(i);
+}
+console.log("---------CONTINUE STATEMENT---------");
+for(let j=1;j<=5;j++){
+    if(j==3){
+        continue;
+    }
+    console.log(j);
+}
