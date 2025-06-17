@@ -240,7 +240,7 @@ if(z==1){
     console.log("Addition is: ",x+y);
 }
 else if(z==2){
-    console.log("Subtreaction : ",x-y);
+    console.log("Subtraction : ",x-y);
 
 }
 else if(z==3){
