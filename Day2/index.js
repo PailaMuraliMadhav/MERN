@@ -125,7 +125,7 @@ for(let i=1;i<=10;i++){
     if(i==5){
         break;
     }
-    console.log(i);
+    console.log(i);                 
 }
 console.log("---------CONTINUE STATEMENT---------");
 for(let j=1;j<=5;j++){
@@ -133,4 +133,19 @@ for(let j=1;j<=5;j++){
         continue;
     }
     console.log(j);
+}
+
+let d="Sunday";
+if(d=="Sunday"){
+for(let k=1;k<=3;k++){
+    console.log("Study Subject: ",k);
+}
+}else{
+    let l=1;
+    do{
+        console.log("Study Subject:",l);
+        l++;
+    }
+while(l<=3);
+
 }
