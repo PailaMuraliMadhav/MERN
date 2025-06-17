@@ -2,7 +2,8 @@ console.log("Hello !")
 
 //variables->
 // --------------------------------------
-//  let- 
+//  let-  block scope
+let a = 10; // block scope
 let Name = "Murali paila" 
 // let a=20;
 // a=10; (error)

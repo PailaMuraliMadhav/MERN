@@ -179,7 +179,43 @@ printnumbers(6)
 
 function ab(){
     console.log(a);
-    var a=10; //undefined
+    var a=10; //undefined 
     // let a=10 (error: Cannot access 'a' before initialization)
 }
 ab();
+
+// --------------------------------------------------------------------------------
+
+// Scope: where a variable is accessed or used in the code.- inside the funtion or outside the function.
+
+// #Global Scope: can be accessed anywhere  in the code.
+let college= "LPU";
+function myclass(){
+    let subject="MERN";
+    console.log("College: ",college);
+    console.log("Subject:",subject);
+
+}
+
+myclass();
+// console.log(subject); // ReferenceError as let is a block scope variable.
+//even using VAR it shows error as it is not defined outside the function.
+
+// Block Scope 
+{
+    let pencil="natraj";
+    console.log(pencil);
+}
+// console.log(pencil); // ReferenceError: pencil is not defined
+// ------------------------------------------------------------------------------
+
+// Closures: when a function rememmbers the variables from its outer scope even after the outer function has finished executing.
+function outer(){
+    let name="Murali";
+    function inner(){
+        console.log("Hello",name);
+    }
+    return inner;
+}
+ let gg=outer();
+gg();
