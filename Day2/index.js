@@ -149,3 +149,20 @@ for(let k=1;k<=3;k++){
 while(l<=3);
 
 }
+
+// FUNCTIONS
+
+function greet(name){
+    console.log("Hello "+ name);
+}
+greet("Murali")
+greet ("Marnus");
+
+// ------------------------
+// Add Two numbers
+function add(a,b){
+    console.log(a+b);
+}
+
+add(2,3);
+add(999,100);
