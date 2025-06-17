@@ -253,3 +253,6 @@ else {
     console.log("Invalidd!");
 }
 
+let a=2,b=3;
+console.log(a+b + "5" +2+2);//5522 as after string the next number is ccounted as string.
+
