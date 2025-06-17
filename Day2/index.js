@@ -230,3 +230,26 @@ function counter(){
 let co=counter();
 co();
 co();
+
+
+let x=10;
+let y=5;
+console.log("Enter 1 for Addition, 2 for Subtraction, 3 for Multiplication, 4 for Division");
+var z=4;
+if(z==1){
+    console.log("Addition is: ",x+y);
+}
+else if(z==2){
+    console.log("Subtreaction : ",x-y);
+
+}
+else if(z==3){
+    console.log("Multiply: ",x*y);
+}
+else if(z==4){
+    console.log("division: ",x/y);
+}
+else {
+    console.log("Invalidd!");
+}
+
