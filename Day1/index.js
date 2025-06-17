@@ -8,7 +8,7 @@ let Name = "Murali paila"
 // a=10; (error)
 // const
 const city="Vizag";
-//  var(we can re assign the number)
+//  var(we can re assign the number)  //GLOBAL SCOPE
 var age =18;
 age=20;
 var age=30;

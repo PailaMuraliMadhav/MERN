@@ -166,3 +166,20 @@ function add(a,b){
 
 add(2,3);
 add(999,100);
+
+function printnumbers(n){
+    for(let i=1;i<=n;i++){
+        console.log(i);
+    }
+
+}
+printnumbers(6)
+
+
+
+function ab(){
+    console.log(a);
+    var a=10; //undefined
+    // let a=10 (error: Cannot access 'a' before initialization)
+}
+ab();
