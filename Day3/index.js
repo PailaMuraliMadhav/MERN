@@ -169,7 +169,7 @@ const stud ={
 
 // converting object to JSON
 const json =JSON.stringify(stud);
-console.log(json);
+console.log("Json is:",json);
 
 // Convert JSON to object
 const jobj = JSON.parse(json);
