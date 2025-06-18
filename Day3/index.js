@@ -90,7 +90,7 @@ const fun = (x)=>{
 fun(2);
 
 
-// Promises:
+// Promises: it is a way to handle asynchronous operations in JavaScript.
 
 let Promises = new Promise((resolve,reject) => {
     let success=true;
@@ -132,18 +132,18 @@ play.then(msg => {
 
 // ! Async/Await  
 // we are able to write asynchronous code in a synchronous manner
-// async function fetch()
-// {
-//     try{
-//         let response= await fetch("https://jsonplaceholder.typicode.com/users");
-//         let data= await response.json();
-//         console.log(data);
-//     }
-//     catch(error){
-//         console.log(error);
-//     }
-// }
-// fetch();
+async function fetchdata()
+{
+    try{
+        let response= await fetch("https://jsonplaceholder.typicode.com/users");
+        let data= await response.json();
+        console.log(data[3]);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+fetchdata();
 
 // -------------------------------------------
 // Fetch API
@@ -156,4 +156,23 @@ fetch("https://jsonplaceholder.typicode.com/users")
 .catch(error => {
     console.log("Error",error);
 })
+
+
+// !  working with JSON : JS Object Notation
+
+// JSON is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.
+
+const stud ={
+    name : "Murali paila",
+    age: 21
+}
+
+// converting object to JSON
+const json =JSON.stringify(stud);
+console.log(json);
+
+// Convert JSON to object
+const jobj = JSON.parse(json);
+console.log(jobj);
+
 
