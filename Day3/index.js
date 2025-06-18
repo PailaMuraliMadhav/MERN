@@ -66,3 +66,94 @@ const bio= {
 }
 console.log(bio.name);
 
+//  Arrow function 
+ 
+// Traditional way
+function add(a,b){
+    console.log(a+b);
+}
+add(5,6);
+
+// Arrow function 
+
+const ad = (a,b) =>{
+    console.log(a+b);
+}
+ad(4,3);
+
+//  math Tables
+const fun = (x)=>{
+    for(let i=0;i<=20;i++){
+        console.log(`${x} * ${i} =${i*x}`);
+    }
+}
+fun(2);
+
+
+// Promises:
+
+let Promises = new Promise((resolve,reject) => {
+    let success=true;
+    if(success){
+        console.log("success");
+    }
+    else{
+        reject("Error!");
+    }
+})
+Promises.then(response => {
+    console.log(response);
+}).catch(error => {
+    console.log(error);
+
+})
+
+
+
+// ---------------------------------------------------
+let play=new Promise((resolve,reject) => {
+    let internet=false;
+    if(internet){
+        resolve("Internet is working");
+
+    }
+    else{
+        reject("Internet is not working");
+    }
+
+})
+
+play.then(msg => {
+    console.log(msg);
+
+ }).catch(error =>{
+    console.log(error);
+ })
+
+// ! Async/Await  
+// we are able to write asynchronous code in a synchronous manner
+// async function fetch()
+// {
+//     try{
+//         let response= await fetch("https://jsonplaceholder.typicode.com/users");
+//         let data= await response.json();
+//         console.log(data);
+//     }
+//     catch(error){
+//         console.log(error);
+//     }
+// }
+// fetch();
+
+// -------------------------------------------
+// Fetch API
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(data => {
+    console.log(data[4].phone);
+
+})
+.catch(error => {
+    console.log("Error",error);
+})
+
