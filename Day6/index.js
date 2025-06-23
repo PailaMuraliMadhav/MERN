@@ -36,6 +36,15 @@ fs.appendFile("Hello2.txt","\nHow are you ?? ",function(err){
         else(console.log("Appended!"))
 })
 */
+// Read a File
+
+fs.readFile("Hello2.txt",function(err,data){
+    if(err) console.log("Error!",err)
+        else(console.log(data.toString()))
+})
+
+
+
 // Deleted a file
 /*
 fs.unlink("Hello2.txt",function(err){
