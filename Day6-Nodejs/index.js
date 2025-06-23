@@ -81,5 +81,6 @@ app.get("/Contact",(req,res)=>{
 
 
 app.listen(3000);//restart server everytime 
+console.log("Server running at 3000")
 
 
