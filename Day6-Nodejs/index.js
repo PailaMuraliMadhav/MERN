@@ -63,10 +63,20 @@ fs.unlink("Hello2.txt",function(err){
 // ???????????????????????????????????????????????????????????????//
 // EXpress.
 
-const exp=require("express");
-const app=exp();
-const port=3000;
+const express=require("express");
+const app=express();
+const port=4000;
+
+app.use(express.static('public'));//  
 // app.get(route,routeMiddleware,callback)
+//middleware is the  function which is executed before the route callback function
+// app.get("/",(req,res
+app.use((req,res,next)=>{
+    console.log("GG");
+    next();
+
+})
+
 app.get("/",(req,res)=>{
      res.send("Hello Murali");
 });
@@ -76,11 +86,9 @@ app.get("/about",(req,res)=>{
 
 app.get("/Contact",(req,res)=>{
     res.send("Contact murali");
-});
+})
 
-
-
-app.listen(3000);//restart server everytime 
-console.log("Server running at 3000")
-
-
+app.listen(4000);//restart server everytime 
+console.log("Server running at 4000")
+// to run npx nodemon index.js
+ 
