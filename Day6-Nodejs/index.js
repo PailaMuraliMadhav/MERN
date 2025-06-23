@@ -67,7 +67,7 @@ const express=require("express");
 const app=express();
 const port=4000;
 
-app.use(express.static('public'));//  
+app.use(express.static('public'));// create a public folder and put all the static files in it(HTML)
 // app.get(route,routeMiddleware,callback)
 //middleware is the  function which is executed before the route callback function
 // app.get("/",(req,res
