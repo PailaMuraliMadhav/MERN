@@ -4,11 +4,12 @@
 // npm - is the package manager.
 
 // //! create a file 
-// const fs = require('node:fs');   ****IMPORTANT*****
+const fs = require('node:fs');  // ****IMPORTANT*****
 //  Modules
+/*
 const greet =require('./greet');
 console.log(greet("Murali"));
-
+*/
 
 /*
 fs.writeFile("Hello.txt","How are you ?????",function(err){
@@ -42,12 +43,12 @@ fs.appendFile("Hello2.txt","\nHow are you ?? ",function(err){
 })
 */
 // Read a File
-/*
+
 fs.readFile("Hello2.txt",function(err,data){
     if(err) console.log("Error!",err)
         else(console.log(data.toString()))
 })
-*/
+
 
 
 // Deleted a file
@@ -57,4 +58,5 @@ fs.unlink("Hello2.txt",function(err){
         else(console.log("File deleted"))
 })
 */
+
 
